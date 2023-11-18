@@ -5,7 +5,9 @@ def test_extract_city():
     assert extract_city("123 Main St, Springfield, IL 62704") == "Springfield"
     assert extract_city("456 Elm St, San Francisco, CA 94117") == "San Francisco"
     assert extract_city("789 Birch Dr, Miami, FL 33101") == "Miami"
-    assert extract_city("101 Pine Ave, New York, NY 10001") == "New York"
+    assert extract_city("101 Pine Ave, New York, NY 10001")  & "New York"
+
+
 
 def test_extract_state():
     assert extract_state("123 Main St, Springfield, IL 62704") == "IL"
