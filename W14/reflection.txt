@@ -1,0 +1,22 @@
+Please respond thoroughly (at least two sentences for each question) to
+the following three questions.
+
+1. Describe an experience you had this semester where you saw the power of functions.
+
+A: I had an interesting experience while working on the ls_validate_date function in prove_milestone.py. Initially, I write a simple check to see if the input string has the format YYYY-MM-DD. It works for some cases, but then bam! I encounter an invalid date like "2023-13-01". My code accepts it as valid, which could lead to inaccurate data retrieval later. That's when I discovered the power of functions within functions.
+
+To address this, I created a helper function called is_valid_month. This function checks if the provided month number lies between 1 and 12. I reuse this function within ls_validate_date, along with similar checks for days and leap years. Suddenly, validating dates becomes more robust and modular. Each sub-function focuses on a specific aspect, making the overall logic clearer and easier to maintain. This experience taught me how functions can not only be used for repetitive tasks but also for building complex checks by combining simpler ones. It's like having a library of building blocks that can be assembled in different ways to solve specific problems.
+
+
+2. In your judgment, what is the value of test functions?
+
+A: I think test functions can be thought of as diligent watchdogs that protect your code. They meticulously examine each line, ensuring it behaves as expected under various conditions. Consider a complex algorithm designed to calculate financial projections. Without testing functions, a single error could have disastrous consequences. 
+
+However, with them, you can create small, targeted tests that simulate different scenarios, exposing hidden bugs and edge cases that may have gone unnoticed. Testing functions are valuable as they help prevent errors before they manifest themselves, saving time, frustration, and potentially even reputational damage. Essentially, they are silent guardians, silently ensuring your code runs smoothly and reliably.
+
+
+3. Describe your process for troubleshooting and fixing a program that has a problem. What is one thing you can do to improve your process?
+
+A: Debugging Python programs can feel like navigating a labyrinth, but the process can be surprisingly rewarding. When I encounter an error, I start by analyzing the error message for clues. Google has become my friend, searching for similar issues and potential solutions. Sometimes, a quick code walk-through reveals a misplaced comma or a forgotten indentation. Other times, a debugger becomes my detective tool, stepping through the code line by line to pinpoint the culprit. The key is to approach the problem systematically, not with panic. 
+
+And if all else fails, asking for help from online communities or forums can often lead to a breakthrough. One thing I've learned to improve my process is to write smaller, more focused functions. This makes it easier to isolate the problematic area and fix it without affecting the rest of the code. Patience and persistence were powerful attributes in my troubleshooting process. Each bug conquered makes me a stronger and more skilled programmer.

@@ -1,0 +1,5 @@
+site_name: Banco Central Money Data Collector
+theme: material
+
+plugins:
+  - markdown-include
